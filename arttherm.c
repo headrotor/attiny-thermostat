@@ -3,15 +3,29 @@ Title:			arttherm.c
 
 Modified from artcon.c by Windell H. Oskay
 Author:	Jonathan Foote jtf@rotormind.com	
+
+
 Date Created:   2/3/2013
-Last Modified:  2/3/2013
+Last Modified:  4/11/2013
  
  Thermostat based on the  Art Controller relay board
  Release version 1.0
 
- 
-Documentation:
- http://wiki.evilmadscience.com/Art_Controller
+Designed to be used with the Art Controller relay board from EMSL
+http://www.evilmadscientist.com/2012/artcontroller/
+Requires a TC74 temperature sensor connected as follows:
+
+Vdd: PB3
+SCK: PB2
+GND: PB1
+SDA: PB0
+
+In order to reduce wiring, power TC74 from VDD on PB3 and GND on PB1.
+
+PD1 is the TX output of the UART used for debugging. Don't close the
+X60 switch or the X10 switch!
+
+More information at http://rotormind.com/blog/Art-Controller-Thermostat
  
 Target: Atmel ATtiny2313A MCU
  
@@ -164,8 +178,7 @@ uint8_t BufferTemp(uint8_t temp){
 }
 
 
-/* to smooth out noisy temperature readings, average over past values */
-/* add new temp value to buffer and return running average */
+/* Initialize the temperature buffer to a given temperature */
 void InitBuffer(uint8_t temp){
   uint8_t i;
   for(i = 0; i < BUFF_SIZE; i++){
