@@ -11,10 +11,12 @@ Designed to be used with the Art Controller relay board from EMSL
 http://www.evilmadscientist.com/2012/artcontroller/
 Requires a TC74 temperature sensor connected as follows:
 
-Vdd: PB3
-SCK: PB2
-GND: PB1
-SDA: PB0
+
+|Vdd | PB3|
+| --- | --- | ---
+|SCK | PB2|
+|GND | PB1|
+|SDA | PB0|
 
 
 PD1 is the TX output of the UART used for debugging. Don't close the
