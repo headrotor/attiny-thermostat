@@ -1,0 +1,30 @@
+# Object files
+*.o
+
+#AVR-GCC compiled binaries
+.elf
+.hex
+.bin
+
+#AVR-GCC compiler output
+*.map
+*.lst
+
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Emacs temp files
+*~
