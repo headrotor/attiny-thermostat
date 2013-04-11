@@ -1,6 +1,6 @@
 
-This is AVR-GCC code for a modified [EMSL Art
-Controller](http://www.evilmadscientist.com/2012/artcontroller/) to
+This is AVR-GCC code for a  [EMSL Art
+Controller](http://www.evilmadscientist.com/2012/artcontroller/) modified to
 thermostatically control the output relay. A TC74 temperature sensor
 turns on the relay when the temperature rises above the set point. The
 relay can be connected in Normally-On mode for heaters or Normally-Off
