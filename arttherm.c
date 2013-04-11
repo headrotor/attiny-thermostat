@@ -25,7 +25,7 @@ In order to reduce wiring, power TC74 from VDD on PB3 and GND on PB1.
 PD1 is the TX output of the UART used for debugging. Don't close the
 X60 switch or the X10 switch!
 
-More information at http://rotormind.com/blog/Art-Controller-Thermostat
+More information at http://rotormind.com/blog/2013/Art-Controller-Thermostat
  
 Target: Atmel ATtiny2313A MCU
  

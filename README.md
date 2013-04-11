@@ -26,7 +26,7 @@ bit-bang I2C code based on this [blog
 post](http://codinglab.blogspot.com/2008/10/i2c-on-avr-using-bit-banging.html)
 by ["Raul"](http://www.blogger.com/profile/05112542436303049493)
 
-More information on the hardware can be found at [this blog post on rotormind.com](http://rotormind.com/blog/Art-Controller-Thermostat)
+More information on the hardware can be found at [this blog post on rotormind.com](http://rotormind.com/blog/2013/Art-Controller-Thermostat)
 
 
 
